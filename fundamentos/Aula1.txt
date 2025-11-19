@@ -1,0 +1,34 @@
+Fundamentos do JavaScript
+
+Js não é Java
+
+O nome da Linguagem JavaScript é Ecma
+
+É possivel executar o JavaScript diiretamento no navegador de internet
+
+O JavaScript pode ser utilizado tanbèm fora do navegador de internet com o uso da plataforma node
+
+Particularidades Da Linguagem(Sintaxe básica)
+
+1) No JavaScript não usamos o conceito de linha e sim de sentença
+2) ; é opcional
+3) Podemos usar " " ou ' ' (não pode misturar)
+    Dica: Usar " " para textos e ' ' para importações
+4) No JavaScript só exixte três tipos de de variáveis
+   - string (caracteres)
+   - number (numeros inteiros e não inteiros)
+   - boolean (verdadeito ou falso)
+5) No JavaScript as variáveis são dinâmicamente tipádas, ou seja o tipo é determinado quando um valor é atribuido
+
+__________________________________________________________________________________________________________________
+JavaScript No FrontEnd
+
+<script></script>
+<script src="script.js"></script>
+
+html------js
+
+IMPORTANTE!!!!! Sempre vincular um documento JS antes do fechamento da tag</body>, pois o JS trava a execução do HTLM se contiver erros
+
+---------------------------------------------------
+let = Cria uma variável
