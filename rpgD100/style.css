@@ -1,0 +1,55 @@
+body {
+    background: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 30px;
+    margin-top: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px;
+    background-color: #740a0a;
+}
+
+/* Formato do dado */
+.dado {
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, #3d2424, #3b0303);
+    border-radius: 50%; /* determina forma esférica */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* inset = sombra de dentro */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2),
+                inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Animação ao rolar */
+.dado.rolando {
+    /* Os mesmos milesegundo do JS */
+    /* Tempo da rolagem */
+    animation: girar 0.5s ease;
+}
+
+/* Determina como a animação vai acontecer */
+@keyframes girar {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(360deg) scale(1.2); }
+    100% { transform: rotate(720deg) scale(1); }
+}
+
+/* número central */
+.centro {
+    font-size: 48px;
+    font-weight: bold; /*negrito*/
+}

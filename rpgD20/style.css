@@ -1,0 +1,60 @@
+body {
+    background: #1a1a1a;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px;
+    background-color: #740a0a;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.centro {
+    width: 150px;
+    height: 150px;
+    background: #e63946;
+    /* Criação do hexagono por meio de coordenadas */
+    /* O clip-path "corta" a Div que antes era uma retângulo até virar o formato que eu quero */
+    clip-path: polygon(50% 0%,
+            /*topo*/
+            90% 20%,
+            /*SupDir*/
+            100% 60%,
+            /**/
+            75% 100%,
+            25% 100%,
+            0% 60%,
+            10% 20%);
+
+    box-shadow: rgba(0, 0, 0, 0.8) 10px 10px inset 0 10px rgba(0, 0, 0, 0.8);
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    border: 4px solid #ffffff55;
+}
